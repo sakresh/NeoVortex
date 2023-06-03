@@ -5,5 +5,5 @@
 ```
 git clone https://github.com/sakresh/NeoVortex ~/.config/nvim
 ```
-
+![Screenshot](/assets/preview.png)
 

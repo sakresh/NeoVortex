@@ -13,7 +13,11 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
+--color
   use 'catppuccin/nvim'
+  use 'folke/tokyonight.nvim'
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
+--Some important plugins for syntax highlighting and file tree
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'

@@ -16,12 +16,21 @@ return require('packer').startup(function(use)
 --color
   use 'catppuccin/nvim'
   use 'folke/tokyonight.nvim'
+  use 'Mofiqul/dracula.nvim'
   use({ 'rose-pine/neovim', as = 'rose-pine' })
 --Some important plugins for syntax highlighting and file tree
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
+  use "lukas-reineke/indent-blankline.nvim"
+  use({
+    "jose-elias-alvarez/null-ls.nvim",
+    config = function()
+        require("null-ls").setup()
+    end,
+    requires = { "nvim-lua/plenary.nvim" },
+})
 -- Code completion 
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-buffer'

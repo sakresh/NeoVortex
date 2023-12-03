@@ -1,9 +1,5 @@
-# NeoVortex
+# My Neovim Configuration based on the GOD OF VIM "ThePrimagen"
 
-## Execute the below command in your terminal to get my config working
+## What does it have ?
 
-```
-git clone https://github.com/sakresh/NeoVortex ~/.config/nvim
-```
-![Screenshot](/assets/preview.png)
-
+Well, it has everything that is required to use Neovim as an IDE

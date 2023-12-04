@@ -1,5 +1,6 @@
-require("neovortex.remaps")
+require("neovortex.lazy")
 require("neovortex.set")
+require("neovortex.remap")
 
 local augroup = vim.api.nvim_create_augroup
 local NeoVortexGroup = augroup('NeoVortex', {})
@@ -31,3 +32,4 @@ autocmd({"BufWritePre"}, {
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
+

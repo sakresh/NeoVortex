@@ -28,10 +28,6 @@ require("lazy").setup({
 		{ 'rose-pine/neovim', name = 'rose-pine' }
 	},
 
-    {
-        {'AlexvZyl/nordic.nvim'}
-    },
-
     -- Parser
 	{
 		'nvim-treesitter/nvim-treesitter',

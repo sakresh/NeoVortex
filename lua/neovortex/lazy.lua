@@ -28,13 +28,31 @@ require("lazy").setup({
 		{ 'rose-pine/neovim', name = 'rose-pine' }
 	},
 
+	{
+		{ '"gbprod/nord.nvim"', name = 'nord' }
+	},
+
+    -- IndenLine
+    {
+        "echasnovski/mini.indentscope",
+        version = false, -- wait till new 0.7.0 release to put it back on semver
+        opts = {
+            -- symbol = "▏",
+            symbol = "│",
+            options = { try_as_border = true },
+        },
+        callback = function()
+            vim.b.miniindentscope_disable = true
+        end,
+    },
+
+
     -- Parser
 	{
 		'nvim-treesitter/nvim-treesitter',
 		dependencies = {
 			'nvim-treesitter/nvim-treesitter-textobjects',
-		},
-		build = ':TSUpdate',
+		}, build = ':TSUpdate',
 	},
 
     -- Harpoon(For Jumping between files instantly)

@@ -29,8 +29,14 @@ require("lazy").setup({
 	},
 
 	{
-		{ '"gbprod/nord.nvim"', name = 'nord' }
+		{ "gbprod/nord.nvim", name = 'nord' }
 	},
+
+    { "catppuccin/nvim", name = "catppuccin" },
+
+    { "joshdick/onedark.vim", name = "onedark" },
+
+    { "folke/tokyonight.nvim", name = "tokyonight" },
 
     -- IndenLine
     {

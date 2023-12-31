@@ -34,6 +34,8 @@ require("lazy").setup({
 
     { "catppuccin/nvim", name = "catppuccin" },
 
+    { "rmehri01/onenord.nvim", name = "onenord" },
+
     { "joshdick/onedark.vim", name = "onedark" },
 
     { "folke/tokyonight.nvim", name = "tokyonight" },

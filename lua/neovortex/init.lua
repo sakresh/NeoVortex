@@ -1,6 +1,7 @@
 require("neovortex.lazy")
 require("neovortex.set")
 require("neovortex.remap")
+require("neovortex.neovide")
 
 local augroup = vim.api.nvim_create_augroup
 local NeoVortexGroup = augroup('NeoVortex', {})

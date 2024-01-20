@@ -54,6 +54,15 @@ require("lazy").setup({
         end,
     },
 
+    -- Comments for neovim
+    {
+        'numToStr/Comment.nvim',
+        opts = {
+            -- add any options here
+        },
+        lazy = false,
+    },
+
 
     -- Parser
 	{

@@ -22,6 +22,11 @@ require("lazy").setup({
         event = 'BufEnter'
     },
 
+    -- Git integration with fugitive
+    {
+        "tpope/vim-fugitive"
+    },
+
     -- Fuzzy Finder
 	{
 		'nvim-telescope/telescope.nvim', tag = '0.1.5',

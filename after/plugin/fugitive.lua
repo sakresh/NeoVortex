@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
+vim.keymap.set("n", "<leader>g", vim.cmd.Git)
 
 local Sakresh_fugitive = vim.api.nvim_create_augroup("Sakresh_fugitive", {})
 

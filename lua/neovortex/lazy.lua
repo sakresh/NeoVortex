@@ -1,5 +1,7 @@
 --Lazy configuration
 
+--nvim.silicon yet to be added -> Screenshot plugin
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -24,7 +26,7 @@ require("lazy").setup({
 
     -- Git integration with fugitive
     {
-        "tpope/vim-fugitive"
+        "tpope/vim-fugitive",
     },
 
     -- Fuzzy Finder
@@ -37,18 +39,6 @@ require("lazy").setup({
 	{
 		{ 'rose-pine/neovim', name = 'rose-pine' }
 	},
-
-	{
-		{ "gbprod/nord.nvim", name = 'nord' }
-	},
-
-    { "catppuccin/nvim", name = "catppuccin" },
-
-    { "rmehri01/onenord.nvim", name = "onenord" },
-
-    { "joshdick/onedark.vim", name = "onedark" },
-
-    { "folke/tokyonight.nvim", name = "tokyonight" },
 
     -- IndenLine
     {
@@ -95,6 +85,17 @@ require("lazy").setup({
 	{
 		'mbbill/undotree'
 	},
+
+    -- Trouble for code diagnostics
+    {
+        "folke/trouble.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        opts = {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+        },
+    },
 
     -- AutoPairs
 	{

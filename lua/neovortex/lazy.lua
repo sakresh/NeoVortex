@@ -1,7 +1,5 @@
 --Lazy configuration
 
---nvim.silicon yet to be added -> Screenshot plugin
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -98,11 +96,11 @@ require("lazy").setup({
     },
 
     -- AutoPairs
-	{
-		'windwp/nvim-autopairs',
-		event = "InsertEnter",
-		opts = {} -- this is equalent to setup({}) function
-	},
+	-- {
+	-- 	'windwp/nvim-autopairs',
+	-- 	event = "InsertEnter",
+	-- 	opts = {} -- this is equalent to setup({}) function
+	-- },
 
     -- LSP
 	{'williamboman/mason.nvim'},
